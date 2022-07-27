@@ -3,8 +3,9 @@
 .page_home {
   background-color: red;
 }
-h1{
+nav, h1 {
   font-family: Arial, Helvetica, sans-serif;
-  color: black;
+  color: red;
+
 }
 
