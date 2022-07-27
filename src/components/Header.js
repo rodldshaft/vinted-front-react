@@ -3,9 +3,9 @@ const Header = () => {
     <header>
       <img src="./assets/img/logo.png" alt="logo" />
       <div>
-        <h1>s'inscrire</h1>
-        <h1>se connecter</h1>
-        <h1>vends tes articles</h1>
+        <h2>s'inscrire</h2>
+        <h2>se connecter</h2>
+        <h2>vends tes articles</h2>
       </div>
     </header>
   );
