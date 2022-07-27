@@ -1,13 +1,13 @@
 const Header = () => {
   return (
-    <nav>
+    <header>
       <img src="./assets/img/logo.png" alt="logo" />
-      <header>
+      <div>
         <h1>s'inscrire</h1>
         <h1>se connecter</h1>
         <h1>vends tes articles</h1>
-      </header>
-    </nav>
+      </div>
+    </header>
   );
 };
 export default Header;
