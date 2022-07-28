@@ -1,9 +1,10 @@
 import axios from "axios";
-// import Home from "./pages/Home";
+// import Home from "./pages/Home"
+import bandeau from "../assets/img/logo.png";
 import { useState, useEffect, Link } from "react";
 
 const Main = () => {
-  const image = "./assets/img/banner-wide.jpeg";
+  // const image = "./assets/img/banner-wide.jpeg";
 
   const [data, setData] = useState();
   const [isLoading, setIsLoading] = useState(true);
@@ -24,14 +25,14 @@ const Main = () => {
     <h1>En cours de chargement</h1>
   ) : (
     <div>
-      <img className="bannerimg" src={image} alt="wide banner" />
+      <img className="bannerimg" src={bandeau} alt="wide banner" />
       <h2>Articles populaire</h2>
       {data.offers.map((offer) => {
         console.log(offer.product_name);
         return (
-          <Link to="/home">
-            <div>{offer.product_name}</div>;
-          </Link>
+          // <Link to="/home">
+          <div>{offer.product_name}</div>
+          // </Link>
         );
       })}
     </div>

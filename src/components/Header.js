@@ -1,8 +1,10 @@
+import logo from "../../public/banner-wide.jpeg";
+
 const Header = () => {
   return (
     <div className="banner-top">
       <header>
-        <img src="./assets/img/logo.png" alt="logo" />
+        <img alt="logo" src={logo} />
         <div className="right">
           <button>s'inscrire</button>
           <button>se connecter</button>

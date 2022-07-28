@@ -8,7 +8,7 @@ import Head from "../components/head";
 const Home = () => {
   return (
     <div className="page_home">
-      <Head />
+      {/* <Head /> */}
       <Header />
       <Main />
       {/* <Link to={`/Offer`}>Aller sa la page Offres</Link> */}
