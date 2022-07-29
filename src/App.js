@@ -16,6 +16,7 @@ function App() {
       {/* <Link to="/offer">Aller a la page offres</Link> */}
       <Routes>
         <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/offer" element={<Offer />} />
       </Routes>
     </Router>

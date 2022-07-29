@@ -1,3 +1,4 @@
+/* eslint-disable valid-typeof */
 import axios from "axios";
 // import Home from "./pages/Home"
 import bandeau from "../assets/img/banner-wide.jpeg";
@@ -31,15 +32,19 @@ const Main = () => {
       </div>
       <nav className="nav">
         {data.offers.map((offer, index) => {
-          console.log({ offer });
+          console.log(
+            offer.owner.account.username !== "false"
+              ? ` =true ${offer.owner.account.username}`
+              : "=false"
+          );
           return (
             // <Link to="/home">
             <div className="thumbnails" keys={index}>
-              {/* {offer.owner.account.username !== undefined ? (
-              <div>{offer.owner.a ccount.username} </div>
-            ) : (
-              "vide"
-            )} */}
+              {/* <div>{offer.owner.account.username} </div> */}
+              {/* {offer.map((owner, index) => {
+                return <div keys={index}>{owner._id} </div>;
+              })} */}
+
               <div>{offer.product_name}</div>
               <img src={offer.product_image.secure_url} alt="" />
               <p>{offer.product_price}€</p>
