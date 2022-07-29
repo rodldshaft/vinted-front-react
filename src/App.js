@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 // pages
@@ -17,7 +17,7 @@ function App() {
       <Routes>
         <Route path="/home" element={<Home />} />
         <Route path="/" element={<Home />} />
-        <Route path="/offer" element={<Offer />} />
+        <Route path="/offer/:id" element={<Offer />} />
       </Routes>
     </Router>
   );
