@@ -29,7 +29,6 @@ const Main = () => {
       <div>
         <img className="bannerimg" src={bandeau} alt="wide banner" />
         <h2>Articles populaire</h2>
-        <a href="" alt="ezezddzed"></a>
       </div>
       <nav className="nav">
         {data.offers.map((offer, index) => {
