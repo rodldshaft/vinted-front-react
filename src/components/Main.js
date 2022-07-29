@@ -38,7 +38,7 @@ const Main = () => {
           //     : "=false"
           // );
           //62cc3b5ac2527d1e1b5445b7  + ${offer._id}
-          console.log(offer._id);
+          // console.log(offer._id);
           return (
             <Link to={`/offer/${offer._id}`}>
               <div className="thumbnails" keys={index}>
@@ -46,7 +46,11 @@ const Main = () => {
                 {/* {offer.map((owner, index) => {
                 return <div keys={index}>{owner._id} </div>;
               })} */}
-
+                {offer.owner.account.username === true ? (
+                  <div>{offer.owner.account.username} </div>
+                ) : (
+                  <div> </div>
+                )}
                 <div>{offer.product_name}</div>
                 <img src={offer.product_image.secure_url} alt="" />
                 <p>{offer.product_price}€</p>
