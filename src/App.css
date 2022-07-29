@@ -117,3 +117,10 @@ img {
    /* margin: 0.8rem; */
    box-sizing: border-box;
 }
+
+.blue {
+color: blue;
+}
+.red {
+color: red;
+}

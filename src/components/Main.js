@@ -32,11 +32,11 @@ const Main = () => {
       </div>
       <nav className="nav">
         {data.offers.map((offer, index) => {
-          console.log(
-            offer.owner.account.username !== "false"
-              ? ` =true ${offer.owner.account.username}`
-              : "=false"
-          );
+          // console.log(
+          //   offer.owner.account.username !== "false"
+          //     ? ` =true ${offer.owner._id} ${offer.owner.account.username}`
+          //     : "=false"
+          // );
           return (
             // <Link to="/home">
             <div className="thumbnails" keys={index}>
@@ -48,8 +48,9 @@ const Main = () => {
               <div>{offer.product_name}</div>
               <img src={offer.product_image.secure_url} alt="" />
               <p>{offer.product_price}€</p>
-              <p>{offer.product_details.TAILLE}</p>
-              <p>{offer.product_details.MARQUE}</p>
+
+              <p className="bleu">{offer.product_details.TAILLE}</p>
+              <p className="red">{offer.product_details.MARQUE}</p>
             </div>
 
             // </Link>
