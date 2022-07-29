@@ -1,19 +1,28 @@
 @import "./assets/css/reset.css";
-
+* {
+  box-sizing: border-box;
+}
 .banner-top {
+  display: flex;
+  align-items: center;
   background-color:white;
   border-bottom: solid #EDEDED 1px;
+  height: 79px;
 }
 nav, h1 {
   font-family: Arial, Helvetica, sans-serif;
   color: red;
 
 }
+body {
+  /* width: 1200px; */
+  margin:0 auto;
+}
 header {
   display: flex;
   justify-content: space-between;
   object-fit: contain;
-  width: 1200px;
+  width: 1222px;
   margin:0 auto;
   /* border-bottom: solid grey 1px; */
   /* background-color:white; */
@@ -26,30 +35,33 @@ header {
 }
 
  .vends{
-  border:solid #017580 1px;
+  border:solid #2DB0BA 1px;
   /* background: none; */
 border-radius: 4px;
 height: 28px;
-/* background: #017580 ; */
-background-color: #017580;
+width: 7.2rem;
+/* background: ##2DB0BA ; */
+background-color: #2DB0BA;
 color: white;
 }
 
 button {
   /* display: flex; */
-  border:solid #017580 1px;
+  border:solid #2DB0BA 1px;
   background: none;
 border-radius: 4px;
 height: 28px;
+width: 7.2rem;
 margin-left: 1rem;
+color: #2DB0BA;
 }
-/* img {
+img {
   display: flex;
-  width: 100%;
-  height: 650PX;
-  border: solid red 1px;
-  object-fit: cover;
-} */
+  /* width: 50%; */
+  height: 46px;
+  /* border: solid red 1px; */
+  object-fit: contain;
+}
  .bannerimg {
   display: flex;
   width: 100%;
@@ -63,3 +75,45 @@ margin-left: 1rem;
   width: 100%;
   height: 100%;
 } */
+
+.thumbnails {
+  display: flex;
+  flex-direction: column;
+  width: calc(100%/5 - (0.8rem*4)/5);
+  height: 460px;
+  /* border:solid 1px black; */
+  margin: 0 0 0 0;
+  box-sizing: border-box;
+  /* flex: 1; */
+}
+.thumbnails:not(:nth-child(5n)){
+  margin-right: 0.8rem;
+  
+}
+ 
+
+
+.thumbnails>img{
+  display: flex;
+  flex-direction: column;
+  /* width: 236px; */
+  height: 362px;
+  object-fit: cover;
+  /* height: 460px; */
+  box-sizing: border-box;
+  padding-top: 1rem;
+  
+}
+  
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  /* border:solid 1px black; */
+  background-color: beige;
+/* flex: 1; */
+ /* margin-right: 0.8rem; */
+  width: 1222px;
+  margin:0 auto;
+   /* margin: 0.8rem; */
+   box-sizing: border-box;
+}

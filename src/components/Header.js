@@ -1,4 +1,4 @@
-import logo from "../../public/banner-wide.jpeg";
+import logo from "../assets/img/logo.png";
 
 const Header = () => {
   return (

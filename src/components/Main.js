@@ -1,7 +1,7 @@
 import axios from "axios";
 // import Home from "./pages/Home"
-import bandeau from "../assets/img/logo.png";
-import { useState, useEffect, Link } from "react";
+import bandeau from "../assets/img/banner-wide.jpeg";
+import { useState, useEffect } from "react";
 
 const Main = () => {
   // const image = "./assets/img/banner-wide.jpeg";
@@ -25,16 +25,32 @@ const Main = () => {
     <h1>En cours de chargement</h1>
   ) : (
     <div>
-      <img className="bannerimg" src={bandeau} alt="wide banner" />
-      <h2>Articles populaire</h2>
-      {data.offers.map((offer) => {
-        console.log(offer.product_name);
-        return (
-          // <Link to="/home">
-          <div>{offer.product_name}</div>
-          // </Link>
-        );
-      })}
+      <div>
+        <img className="bannerimg" src={bandeau} alt="wide banner" />
+        <h2>Articles populaire</h2>
+      </div>
+      <nav className="nav">
+        {data.offers.map((offer, index) => {
+          console.log({ offer });
+          return (
+            // <Link to="/home">
+            <div className="thumbnails" keys={index}>
+              {/* {offer.owner.account.username !== undefined ? (
+              <div>{offer.owner.a ccount.username} </div>
+            ) : (
+              "vide"
+            )} */}
+              <div>{offer.product_name}</div>
+              <img src={offer.product_image.secure_url} alt="" />
+              <p>{offer.product_price}€</p>
+              <p>{offer.product_details.TAILLE}</p>
+              <p>{offer.product_details.MARQUE}</p>
+            </div>
+
+            // </Link>
+          );
+        })}
+      </nav>
     </div>
   );
 };
