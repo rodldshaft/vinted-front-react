@@ -1,4 +1,6 @@
 import "./App.scss";
+import "./assets/css/main.scss";
+import "./assets/css/test.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 // pages

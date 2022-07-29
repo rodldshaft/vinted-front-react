@@ -29,24 +29,14 @@ const Main = () => {
       <div>
         <img className="bannerimg" src={bandeau} alt="wide banner" />
         <h2>Articles populaire</h2>
+        <a href="" alt="ezezddzed"></a>
       </div>
       <nav className="nav">
         {data.offers.map((offer, index) => {
-          // console.log(
-          //   offer.owner.account.username !== "false"
-          //     ? ` =true ${offer.owner._id} ${offer.owner.account.username}`
-          //     : "=false"
-          // );
-          //62cc3b5ac2527d1e1b5445b7  + ${offer._id}
-          // console.log(offer._id);
           return (
             <Link to={`/offer/${offer._id}`}>
               <div className="thumbnails" keys={index}>
-                {/* <div>{offer.owner.account.username} </div> */}
-                {/* {offer.map((owner, index) => {
-                return <div keys={index}>{owner._id} </div>;
-              })} */}
-                {offer.owner.account.username === true ? (
+                {offer.owner ? (
                   <div>{offer.owner.account.username} </div>
                 ) : (
                   <div> </div>

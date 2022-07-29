@@ -7,14 +7,20 @@ main .bannerimg {
      border: solid red 1px; 
   }
   
-  main Link {
-    // display: flex;
+  main :link {
+    display: flex;
     flex-direction: column;
     /* flex-wrap: wrap; */
      border:solid 1px black;
      background-color: aqua;
   }
-   main Link .thumbnails {
+
+ :link {
+    background-color: beige;
+    border:solid 10px rgb(12, 236, 87);
+    
+  }
+   main :link .thumbnails {
     display: flex;
     flex-direction: column;
     width: calc(100%/5 - (0.8rem*4)/5);
