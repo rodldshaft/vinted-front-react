@@ -37,6 +37,8 @@ const Main = () => {
           //     ? ` =true ${offer.owner._id} ${offer.owner.account.username}`
           //     : "=false"
           // );
+
+          console.log(offer);
           return (
             // <Link to="/home">
             <div className="thumbnails" keys={index}>
@@ -49,8 +51,8 @@ const Main = () => {
               <img src={offer.product_image.secure_url} alt="" />
               <p>{offer.product_price}€</p>
 
-              <p className="bleu">{offer.product_details.TAILLE}</p>
-              <p className="red">{offer.product_details.MARQUE}</p>
+              <p>{offer.product_details[1].TAILLE}</p>
+              <p>{offer.product_details[0].MARQUE}</p>
             </div>
 
             // </Link>

@@ -118,9 +118,9 @@ img {
    box-sizing: border-box;
 }
 
-.blue {
+p .blue {
 color: blue;
 }
-.red {
+p .red {
 color: red;
 }
