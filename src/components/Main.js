@@ -33,7 +33,7 @@ const Main = () => {
       <nav className="nav">
         {data.offers.map((offer, index) => {
           return (
-            <Link to={`/offer/${offer._id}`}>
+            <Link keys={index} to={`/offer/${offer._id}`}>
               <div className="thumbnails" keys={index}>
                 {offer.owner ? (
                   <div>{offer.owner.account.username} </div>

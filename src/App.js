@@ -1,5 +1,6 @@
 import "./App.scss";
 // import "./assets/css/main.scss";
+import "./assets/css/offer.scss";
 import "./assets/css/test.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
@@ -11,15 +12,10 @@ import Offer from "./pages/Offer";
 function App() {
   return (
     <Router>
-      {/* <Link className="home" to="/home">
-        Home
-      </Link> */}
-
-      {/* <Link to="/offer">Aller a la page offres</Link> */}
       <Routes>
-        <Route path="/home" element={<Home />} />
+        {/* <Route path="/home" element={<Home />} /> */}
         <Route path="/" element={<Home />} />
-        <Route path="/offer/:id" element={<Offer />} />
+        <Route path="/offer/:offerId" element={<Offer />} />
       </Routes>
     </Router>
   );
