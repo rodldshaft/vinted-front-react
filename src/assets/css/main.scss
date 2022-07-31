@@ -1,40 +1,47 @@
  .main .bannerimg {
+
     display: flex;
     width: 100%;
     height: 650px;
     background-color: rgb(213, 191, 233);
     object-fit: cover;
-     border: solid red 1px; 
+     border: solid red 1px;
+
   }
   
-//   .main {
-//     display: flex;
-//     flex-direction: column;
-//     /* flex-wrap: wrap; */
-//      border:solid 1px black;
-//     //  background-color: aqua;
-//   }
+  .main {
+
+    // display: flex;
+    // flex-direction: column;
+    /* flex-wrap: wrap; */
+     border:solid 1px black;
+     background-color: aqua;
+
+  }
 
  
-   .main .a {
+  .main .a {
+
     display: flex;
     flex-direction: column;
     width: calc(100%/5 - (0.8rem*4)/5);
     height: 460px;
-    /* border:solid 1px black; */
+     border:solid 1px black; 
     margin: 0 0 0 0;
     box-sizing: border-box;
     background-color: rgb(134, 126, 234);
   
-       .thumbnails img{
+      .thumbnails img{
+
         display: flex;
         flex-direction: column;
-        width: 200px;
+        // width: 200px;
         height: 362px;
         object-fit: cover;
         box-sizing: border-box;
         padding-top: 1rem;
         // background-color: aqua;
+
       }
   
       :not(:nth-child(5n)){
@@ -44,14 +51,16 @@
   }
   
   .main .nav {
+
     display: flex;
     flex-wrap: wrap;
-    /* border:solid 1px black; */
-    background-color: beige;
+    // /* border:solid 1px beige; */
+    // background-color: beige;
   /* flex: 1; */
    /* margin-right: 0.8rem; */
     width: 1222px;
     margin:0 auto;
      /* margin: 0.8rem; */
      box-sizing: border-box;
+
   }

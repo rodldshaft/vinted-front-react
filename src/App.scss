@@ -2,7 +2,7 @@
 * {
   box-sizing: border-box;
 }
-.banner-top {
+.banner-top header {
   display: flex;
   align-items: center;
   background-color:white;
@@ -18,40 +18,40 @@ body {
   /* width: 1200px; */
   margin:0 auto;
 }
-header {
+.banner-top header {
   display: flex;
   justify-content: space-between;
   object-fit: contain;
-  width: 1222px;
+  max-width: 1222px;
   margin:0 auto;
   /* border-bottom: solid grey 1px; */
   /* background-color:white; */
 }
-.right {
+.banner-top header .right {
   display: flex;
   justify-content: right;
   /* margin-left: 10px; */
   width: 100%;
 }
 
- .vends{
+.banner-top header .vends{
   border:solid #2DB0BA 1px;
   /* background: none; */
 border-radius: 4px;
 height: 28px;
-width: 7.2rem;
+// width: 7.5rem;
 /* background: ##2DB0BA ; */
 background-color: #2DB0BA;
 color: white;
 }
 
-button {
+.banner-top header button {
   /* display: flex; */
   border:solid #2DB0BA 1px;
   background: none;
 border-radius: 4px;
 height: 28px;
-width: 7.2rem;
+width: 7.5rem;
 margin-left: 1rem;
 color: #2DB0BA;
 }
